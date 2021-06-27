@@ -1,0 +1,186 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+html {
+    scroll-behavior: smooth; 
+  }
+body{
+    
+    background: url('img/corsesbg.jpg') center center/cover;
+}
+:root{
+    font-size: 62.5%;
+}
+
+/* Header */
+header{
+    /* border: 2px solid red; */
+    background-color: rgb(228, 228, 228);
+    margin: 30px;
+    height: 10vh;
+         box-shadow:7px 7px 7px rgba(141, 140, 140,0.6);
+         border-radius: 11px;
+          margin-bottom: 7px;
+         display:flex;
+         align-items: center;
+         position:sticky;
+         top:10px;
+         z-index: 100;
+}
+
+/* logo and heading */
+#logobox{
+    text-decoration: none;
+    color: black;
+}
+#logocontainer{
+    display:flex;
+    align-items: center;
+    margin: 7px;
+}
+#logo{
+width: 70px;
+}
+#mheading{
+    font-size: 3rem;
+    margin: 5px;
+}
+
+/* Navigation Bar and footer */
+nav{
+    position: absolute;
+    right:0px;
+    
+}
+    
+    nav ul li, footer li{
+        list-style: none;
+    
+    }
+    nav ul a, footer a{ 
+        text-decoration: none;
+        padding: 7px;
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: black;
+        
+        margin: 5px;
+    }
+    nav ul a:hover, #active{
+        background-color: #5525da;
+        color: white;
+    }
+    nav ul, footer ul{
+        display: flex;
+        margin: 10px;
+align-items: center;
+    }
+    /* Section */
+    #sheading{
+        font-size: 4rem;
+        text-align: center;
+        margin: 20px;
+    }
+#ourcourses{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+   
+}
+.courses{
+    width: 400px;
+    height: 267px;
+    margin: 30px;
+    border: 2px solid black;
+    border-radius: 20px;
+    transition: all 0.4s;
+}
+.courses:hover{
+transform: scale(1.2);
+cursor: pointer;
+}
+marquee{
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+    /* Footer */
+footer{
+    /* border: 2px solid red; */
+    background-color: rgb(228, 228, 228);
+    
+    width: 100vw;
+}
+footer ul {
+    justify-content: center;
+    
+}
+footer a{
+    padding:0px;
+}
+Footer a:hover{
+    color:#5525da;
+}
+#startwith{
+   font-size:2rem;
+}
+/* Responsive Design */
+@media only screen and (min-width:574px) and (max-width:1920px) {
+    footer{
+        /* border: 2px solid red; */
+        background-color: rgb(228, 228, 228);
+        
+        width: 100vw;
+        position:fixed;
+        top: 95vh;
+    }
+}
+@media only screen and (min-width:0px) and (max-width:574px) {
+    #mheading{
+     display: none;
+    }
+}
+@media only screen and (min-width:0px) and (max-width:456px) {
+    .courses{
+        width:300px;
+        height: 200.25px;
+    }
+}
+@media only screen and (min-width:0px) and (max-width:420px) {
+    nav ul a{
+        font-size: 1rem;
+    }
+    #logo{
+        width: 50px;
+        }
+        header{
+         margin: 20px;
+        }
+}
+@media only screen and (min-width:0px) and (max-width:420px) {
+    header{
+        margin:5px;
+    }
+}
+@media only screen and (min-width:0px) and (max-width:358px){
+    .courses{
+        width:250px;
+        height: 166.875px;
+    }
+}
+@media only screen and (min-width:0px) and (max-width:311px){
+    #logo{
+        width: 30px;
+        }
+        .courses{
+            width:230px;
+            height: 153.525px;
+        }
+}
